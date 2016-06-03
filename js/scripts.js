@@ -5,7 +5,7 @@ function indexOfMax(array) {
   }
   var max = array[0];
   var maxIndex = 0;
-  for (i=0; i < array.length-1; i++) {
+  for (i=1; i < array.length; i++) {
     if (array[i] > max) {
       maxIndex = i;
       max = array[i];
@@ -50,10 +50,9 @@ $(document).ready(function(){
       $("#paris-page").show();
     } else if (destIndex === 2) {
       $("#serengeti-page").show();
-    } else if  (destIndex === 3) {
+    } else if (destIndex === 3) {
       $("#alaska-page").show();
     }
-
     $("#vacation-input").hide();
     event.preventDefault();
   });

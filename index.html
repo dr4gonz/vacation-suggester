@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,300,700' rel='stylesheet' type='text/css'>
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
     <script src="js/scripts.js" type="text/javascript"></script>
@@ -11,228 +12,229 @@
   <body>
     <div class="container-fluid">
       <form id="vacation-input" class="col-sm-6 col-sm-offset-2">
-        <h1>Where should you go for vacation?</h1>
+        <h2 id="highlight">Where should you go for vacation?</h2>
+        <img src="img/dreamvacation_hero.jpg" class="center-block img-responsive" alt="dream vacation logo picture" id="bannerpic">
         <!--Question 1-->
         <div class="form-group">
-          <h3>Where do you feel most relaxed?</h3>
+          <h3>Q1: Where do you feel most relaxed?</h3>
           <div class="radio">
             <label>
               <input type="radio" name="question1" value="serengeti-ans">
-              <p class="">On an adventure</p>
+              <p class="answer-text">On an adventure</p>
             </label>
           </div>
           <div class="radio">
             <label>
               <input type="radio" name="question1" value="tulum-ans">
-              <p class="">On the beach</p>
+              <p class="answer-text">On the beach</p>
             </label>
           </div>
           <div class="radio">
             <label>
               <input type="radio" name="question1" value="paris-ans">
-              <p class="">At a Cafe</p>
+              <p class="answer-text">At a Cafe</p>
             </label>
           </div>
           <div class="radio">
             <label>
               <input type="radio" name="question1" value="alaska-ans">
-              <p class="">Near a lake.</p>
+              <p class="answer-text">Near a lake.</p>
             </label>
           </div>
         </div>
         <!--Question 2-->
         <div class="form-group">
-          <h3>What is your drink of choice?</h3>
+          <h3>Q2: What is your drink of choice?</h3>
           <div class="radio">
             <label>
               <input type="radio" name="question2" value="tulum-ans">
-              <p class="">Cold beer.</p>
+              <p class="answer-text">Cold beer.</p>
             </label>
           </div>
           <div class="radio">
             <label>
               <input type="radio" name="question2" value="alaska-ans">
-              <p class="">Glass of whiskey</p>
+              <p class="answer-text">Glass of whiskey</p>
             </label>
           </div>
           <div class="radio">
             <label>
               <input type="radio" name="question2" value="serengeti-ans">
-              <p class="">Fresh Squeezed Juice</p>
+              <p class="answer-text">Fresh Squeezed Juice</p>
             </label>
           </div>
           <div class="radio">
             <label>
               <input type="radio" name="question2" value="paris-ans">
-              <p class="">Shot of espresso</p>
+              <p class="answer-text">Shot of espresso</p>
             </label>
           </div>
         </div>
         <!--Question 3-->
         <div class="form-group">
-          <h3>Choose an animal: </h3>
+          <h3>Q3: Choose an animal: </h3>
           <div class="radio">
             <label>
               <input type="radio" name="question3" value="paris-ans">
-              <p class="">Sheep</p>
+              <p class="answer-text">Sheep</p>
             </label>
           </div>
           <div class="radio">
             <label>
               <input type="radio" name="question3" value="tulum-ans">
-              <p class="">Parrot</p>
+              <p class="answer-text">Parrot</p>
             </label>
           </div>
           <div class="radio">
             <label>
               <input type="radio" name="question3" value="serengeti-ans">
-              <p class="">Lion</p>
+              <p class="answer-text">Lion</p>
             </label>
           </div>
           <div class="radio">
             <label>
               <input type="radio" name="question3" value="alaska-ans">
-              <p class="">Bear</p>
+              <p class="answer-text">Bear</p>
             </label>
           </div>
         </div>
         <!--Question 4-->
         <div class="form-group">
-          <h3>Choose a location: </h3>
+          <h3>Q4: Choose a location: </h3>
           <div class="radio">
             <label>
               <input type="radio" name="question4" value="alaska-ans">
-              <p class="">The mountain.</p>
+              <p class="answer-text">The mountain.</p>
             </label>
           </div>
           <div class="radio">
             <label>
               <input type="radio" name="question4" value="paris-ans">
-              <p class="">The city.</p>
+              <p class="answer-text">The city.</p>
             </label>
           </div>
           <div class="radio">
             <label>
               <input type="radio" name="question4" value="serengeti-ans">
-              <p class="">The desert.</p>
+              <p class="answer-text">The desert.</p>
             </label>
           </div>
           <div class="radio">
             <label>
               <input type="radio" name="question4" value="tulum-ans">
-              <p class="">The beach.</p>
+              <p class="answer-text">The beach.</p>
             </label>
           </div>
         </div>
         <!--Question 5-->
         <div class="form-group">
-          <h3>Choose a type of food: </h3>
+          <h3>Q5: Choose a type of food: </h3>
           <div class="radio">
             <label>
               <input type="radio" name="question5" value="serengeti-ans">
-              <p class="">I like to try new things!</p>
+              <p class="answer-text">I like to try new things!</p>
             </label>
           </div>
           <div class="radio">
             <label>
               <input type="radio" name="question5" value="tulum-ans">
-              <p class="">Mexican</p>
+              <p class="answer-text">Mexican</p>
             </label>
           </div>
           <div class="radio">
             <label>
               <input type="radio" name="question5" value="alaska-ans">
-              <p class="">American</p>
+              <p class="answer-text">American</p>
             </label>
           </div>
           <div class="radio">
             <label>
               <input type="radio" name="question5" value="paris-ans">
-              <p class="">French</p>
+              <p class="answer-text">French</p>
             </label>
           </div>
         </div>
         <!--Question 6-->
         <div class="form-group">
-          <h3>Pick a location to explore: </h3>
+          <h3>Q6: Pick a location to explore: </h3>
           <div class="radio">
             <label>
               <input type="radio" name="question6" value="tulum-ans">
-              <p class="">An ancient ruin.</p>
+              <p class="answer-text">An ancient ruin.</p>
             </label>
           </div>
           <div class="radio">
             <label>
               <input type="radio" name="question6" value="paris-ans">
-              <p class="">A museum with famous paintings.</p>
+              <p class="answer-text">A museum with famous paintings.</p>
             </label>
           </div>
           <div class="radio">
             <label>
               <input type="radio" name="question6" value="serengeti-ans">
-              <p class="">A plain with wild animals.</p>
+              <p class="answer-text">A plain with wild animals.</p>
             </label>
           </div>
           <div class="radio">
             <label>
               <input type="radio" name="question6" value="alaska-ans">
-              <p class="">An isolated mountain wilderness.</p>
+              <p class="answer-text">An isolated mountain wilderness.</p>
             </label>
           </div>
         </div>
         <!--Question 7-->
         <div class="form-group">
-          <h3>Choose a place to stay:</h3>
+          <h3>Q7: Choose a place to stay:</h3>
           <div class="radio">
             <label>
               <input type="radio" name="question7" value="alaska-ans">
-              <p class="">A log cabin.                                                                                                                                                                              </p>
+              <p class="answer-text">A log cabin.                                                                                                                                                                              </p>
             </label>
           </div>
           <div class="radio">
             <label>
               <input type="radio" name="question7" value="paris-ans">
-              <p class="">An old, fancy hotel.</p>
+              <p class="answer-text">An old, fancy hotel.</p>
             </label>
           </div>
           <div class="radio">
             <label>
               <input type="radio" name="question7" value="tulum-ans">
-              <p class="">A beach-side resort.</p>
+              <p class="answer-text">A beach-side resort.</p>
             </label>
           </div>
           <div class="radio">
             <label>
               <input type="radio" name="question7" value="serengeti-ans">
-              <p class="">A small but well equipped hut.</p>
+              <p class="answer-text">A small but well equipped hut.</p>
             </label>
           </div>
         </div>
         <!--Question 8-->
         <div class="form-group">
-          <h3>Choose a book: </h3>
+          <h3>Q8: Choose a book: </h3>
           <div class="radio">
             <label>
               <input type="radio" name="question8" value="serengeti-ans">
-              <p class=""><a href="https://en.wikipedia.org/wiki/The_Man-eaters_of_Tsavo">The Man-eaters of Tsavo</a></p>
+              <p class="answer-text"><a href="https://en.wikipedia.org/wiki/The_Man-eaters_of_Tsavo">The Man-eaters of Tsavo</a></p>
             </label>
           </div>
           <div class="radio">
             <label>
               <input type="radio" name="question8" value="alaska-ans">
-              <p class=""><a href="https://en.wikipedia.org/wiki/Into_the_Wild_(book)">Into the Wild</a></p>
+              <p class="answer-text"><a href="https://en.wikipedia.org/wiki/Into_the_Wild_(book)">Into the Wild</a></p>
             </label>
           </div>
           <div class="radio">
             <label>
               <input type="radio" name="question8" value="tulum-ans">
-              <p class="">Vogue/GQ</p>
+              <p class="answer-text">Vogue/GQ</p>
             </label>
           </div>
           <div class="radio">
             <label>
               <input type="radio" name="question8" value="paris-ans">
-              <p class=""><a href="https://en.wikipedia.org/wiki/Les_Mis%C3%A9rables">Les Misérables</a></p>
+              <p class="answer-text"><a href="https://en.wikipedia.org/wiki/Les_Mis%C3%A9rables">Les Misérables</a></p>
             </label>
           </div>
         </div>
@@ -245,8 +247,8 @@
             <img src="img/tulum-vacation.jpg" class="vacation-image center-block img-responsive" alt="image of Tulum Mexico">
           </div>
           <div class="col-sm-6">
-            <h3>You should go to Tulum, Mexico!</h3>
-            <p class="">Tulum has beautiful beaches, wonderful ruins to explore, and amazing food and drink! Looking for a place to swim? Choose between the Gulf of Mexico or any one of hundreds of Cenotes, or underground lakes, accessible by foot! A short drive will bring you to Chichen Itza where you can explore ruins dating back hundreds of years!</p>
+            <h2>You should go to Tulum, Mexico!</h2>
+            <p class="destination-text">Tulum has beautiful beaches, wonderful ruins to explore, and amazing food and drink! Looking for a place to swim? Choose between the Gulf of Mexico or any one of hundreds of Cenotes, or underground lakes, accessible by foot! A short drive will bring you to Chichen Itza where you can explore ruins dating back hundreds of years!</p>
           </div>
         </div>
       </div>
@@ -258,7 +260,7 @@
           </div>
           <div class="col-sm-6">
             <h3>You should go to Paris, France!</h3>
-            <p class="">Paris is majestic! Spend time exploring history in their many museums and appreciate the ancient architecture.  Explore sites such as the Louvre, the Eiffel Tower, the Arc de Triomphe, the Palace of Versailles or take in the sights at one of the many cafes on teh River Seine.</p>
+            <p class="destination-text">Paris is majestic! Spend time exploring history in their many museums and appreciate the ancient architecture.  Explore sites such as the Louvre, the Eiffel Tower, the Arc de Triomphe, the Palace of Versailles or take in the sights at one of the many cafes on teh River Seine.</p>
           </div>
         </div>
       </div>
@@ -270,7 +272,7 @@
           </div>
           <div class="col-sm-6">
             <h3>You should go to the Serengeti!</h3>
-            <p class="">While technically more of an ecosystem than a place, you can choose between visiting Tanzania and Kenya to explore the Serengeti which hosts the largest terrestrial mammal migration in the world!  Take in views of approximately 70 karge nannak and 500 bird species spanning a huge variety of habitats.  Looking for somewhere to relax? Try local hotels and restaurants in Nairobi!</p>
+            <p class="destination-text">While technically more of an ecosystem than a place, you can choose between visiting Tanzania and Kenya to explore the Serengeti which hosts the largest terrestrial mammal migration in the world!  Take in views of approximately 70 karge nannak and 500 bird species spanning a huge variety of habitats.  Looking for somewhere to relax? Try local hotels and restaurants in Nairobi!</p>
           </div>
         </div>
       </div>
@@ -282,7 +284,7 @@
           </div>
           <div class="col-sm-6">
             <h3>You should go to Alaska!</h3>
-            <p class=""></p>
+            <p class="destination-text">Take in the Iditarod, climb Dinali, paddle a canoe or fly a plane across the Alaskan frontier! Enjoy snow covered peaks, rustic log cabins and toasty warm beverages in any of the remote resort areas spanning Alaskan territory! Looking for adventure? A short walk outside will have you challenging everything Alaska has to offer!</p>
           </div>
         </div>
       </div>
