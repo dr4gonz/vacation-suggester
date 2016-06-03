@@ -72,6 +72,10 @@ $(document).ready(function(){
       alaska++;
     }
 
+    console.log(tulum);
+    console.log(paris);
+    console.log(serengeti);
+    console.log(alaska);
 
     event.preventDefault();
   });
