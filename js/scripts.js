@@ -6,6 +6,10 @@ $(document).ready(function(){
     var q4 = $("input:radio[name=question4]:checked").val();
     var q5 = $("input:radio[name=question5]:checked").val();
     var q6 = $("input:radio[name=question6]:checked").val();
+    var q7 = $("input:radio[name=question7]:checked").val();
+    var q8 = $("input:radio[name=question8]:checked").val();
+    var q9 = $("input:radio[name=question9]:checked").val();
+    var q10 = $("input:radio[name=question10]:checked").val();
 
     var tulum = 0;
     var paris = 0;
@@ -69,6 +73,46 @@ $(document).ready(function(){
     } else if (q6 === "serengeti-ans") {
       serengeti++;
     } else if (q6 === "alaska-ans") {
+      alaska++;
+    }
+
+    if (q7 === "tulum-ans") {
+      tulum++;
+    } else if (q7 === "paris-ans") {
+      paris++;
+    } else if (q7 === "serengeti-ans") {
+      serengeti++;
+    } else if (q7 === "alaska-ans") {
+      alaska++;
+    }
+
+    if (q8 === "tulum-ans") {
+      tulum++;
+    } else if (q8 === "paris-ans") {
+      paris++;
+    } else if (q8 === "serengeti-ans") {
+      serengeti++;
+    } else if (q8 === "alaska-ans") {
+      alaska++;
+    }
+
+    if (q9 === "tulum-ans") {
+      tulum++;
+    } else if (q9 === "paris-ans") {
+      paris++;
+    } else if (q9 === "serengeti-ans") {
+      serengeti++;
+    } else if (q9 === "alaska-ans") {
+      alaska++;
+    }
+
+    if (q10 === "tulum-ans") {
+      tulum++;
+    } else if (q10 === "paris-ans") {
+      paris++;
+    } else if (q10 === "serengeti-ans") {
+      serengeti++;
+    } else if (q10 === "alaska-ans") {
       alaska++;
     }
 
