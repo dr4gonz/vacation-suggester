@@ -24,16 +24,11 @@ $(document).ready(function(){
     var q6 = $("input:radio[name=question6]:checked").val();
     var q7 = $("input:radio[name=question7]:checked").val();
     var q8 = $("input:radio[name=question8]:checked").val();
-    var q9 = $("input:radio[name=question9]:checked").val();
-    var q10 = $("input:radio[name=question10]:checked").val();
-
-    var answers = [q1,q2,q3,q4,q5,q6,q7,q8,q9,q10];
-
+    var answers = [q1,q2,q3,q4,q5,q6,q7,q8];
     var tulum = 0;
     var paris = 0;
     var serengeti = 0;
     var alaska = 0;
-
     //iterates of answers[] to tally answers
     for (i=0; i < answers.length-1; i++){
       if (answers[i] === "tulum-ans") {
@@ -48,7 +43,7 @@ $(document).ready(function(){
     }
     var destination = [tulum, paris, serengeti, alaska];
     var destIndex = indexOfMax(destination);
-
+    //Displays the page of whichever vacation was determined for the user.
     if (destIndex === 0) {
       $("#tulum-page").show();
     } else if (destIndex === 1) {
@@ -60,12 +55,6 @@ $(document).ready(function(){
     }
 
     $("#vacation-input").hide();
-    console.log(tulum);
-    console.log(paris);
-    console.log(serengeti);
-    console.log(alaska);
-    console.log(destination);
-
     event.preventDefault();
   });
 });
