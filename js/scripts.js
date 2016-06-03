@@ -1,3 +1,19 @@
+//Finds the index value for largest number in array
+function indexOfMax(array) {
+  if (array.length === 0) {
+    return -1;
+  }
+  var max = array[0];
+  var maxIndex = 0;
+  for (i=0; i < array.length-1; i++) {
+    if (array[i] > max) {
+      maxIndex = i;
+      max = array[i];
+    }
+  }
+  return maxIndex;
+}
+
 $(document).ready(function(){
   $("form#vacation-input").submit(function(event){
     var q1 = $("input:radio[name=question1]:checked").val();
@@ -30,11 +46,25 @@ $(document).ready(function(){
         alaska++;
       }
     }
+    var destination = [tulum, paris, serengeti, alaska];
+    var destIndex = indexOfMax(destination);
 
+    if (destIndex === 0) {
+      $("#tulum-page").show();
+    } else if (destIndex === 1) {
+      $("#paris-page").show();
+    } else if (destIndex === 2) {
+      $("#serengeti-page").show();
+    } else if  (destIndex === 3) {
+      $("#alaska-page").show();
+    }
+
+    $("#vacation-input").hide();
     console.log(tulum);
     console.log(paris);
     console.log(serengeti);
     console.log(alaska);
+    console.log(destination);
 
     event.preventDefault();
   });
